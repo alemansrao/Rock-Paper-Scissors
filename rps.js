@@ -2,6 +2,18 @@ let score = 0;
 let Cscore = 0;
 const list = ["Rock", "Paper", "Scissors"];
 
+function setScore() {
+  if (localStorage.getItem("score") != null) {
+    score = Number(localStorage.getItem("score"));
+    Cscore = Number(localStorage.getItem("Cscore"));
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("Cscore").innerHTML = Cscore;
+    console.log("present");
+  } else {
+    console.log("test");
+  }
+}
+
 function removeBorders() {
   document.getElementById("Rock").style.border = "0";
   document.getElementById("Paper").style.border = "0";
@@ -17,8 +29,9 @@ function getRandomItem() {
 
 function determineWinner(item, CItem) {
   removeBorders();
-  document.getElementById(item).style.border = "#1000b5 2px dashed"
-  document.getElementById(CItem.toLowerCase()+"Image").style.border = "#1000b5 2px dashed"
+  document.getElementById(item).style.border = "#1000b5 2px dashed";
+  document.getElementById(CItem.toLowerCase() + "Image").style.border =
+    "#1000b5 2px dashed";
 
   if (
     (item == "Rock" && CItem == "Scissors") ||
@@ -43,11 +56,12 @@ function updateGameResult(item, CItem, winner) {
   }
   document.getElementById("score").innerHTML = score;
   document.getElementById("Cscore").innerHTML = Cscore;
+  localStorage.setItem("score", score);
+  localStorage.setItem("Cscore", Cscore);
 }
-let cnt=1
 function playGame(item) {
-  console.log(cnt);
-  cnt+=1
+  console.log(localStorage.getItem("lastname"));
+
   const CItem = getRandomItem();
   const winner = determineWinner(item, CItem);
   updateGameResult(item, CItem, winner);
