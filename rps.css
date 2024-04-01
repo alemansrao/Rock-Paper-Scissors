@@ -9,7 +9,7 @@
   
   .flex-container > div {
     /* background-color: #f1f1f1; */
-    width: 33.33%;
+    width: 100%;
     height: 33.33vh;
     display: flex;
     flex-direction: column;
@@ -55,8 +55,8 @@ width: 100px;
     }
     .flex-container > div {
       /* background-color: #ffffff; */
-      height: 33.33vh;
-      width: 33.33%;
+      height: 20vh;
+      width: 100%;
       display: flex;
       flex-direction: row;
       /* margin: 10px; */
@@ -70,7 +70,10 @@ width: 100px;
     }
     #middle{
       width: 100%;
+      height: 40vh;
       flex-direction: column;
     }
     #reset{display: none;}
+    a{border: 0;}
+    button{padding: 0;}
   }
