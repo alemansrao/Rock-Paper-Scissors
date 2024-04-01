@@ -1,13 +1,13 @@
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: DodgerBlue;
+    /* background-color: DodgerBlue; */
     margin: 0;
     padding: 0;
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     width: 33.33%;
     height: 100vh;
     display: flex;
@@ -34,4 +34,41 @@ h1{
   body{
     margin:0;
     padding: 0;
+  }
+
+  @media screen and (max-width: 500px) {
+    img{
+width: 100px;
+    }
+    h1{
+      font-size: 10px;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      /* background-color: DodgerBlue; */
+      margin: 0;
+      padding: 0;
+    }
+    .flex-container > div {
+      /* background-color: #f1f1f1; */
+      height: 33.33vh;
+      width: 33.33%;
+      display: flex;
+      flex-direction: row;
+      /* margin: 10px; */
+      text-align: center;
+      align-items: center;
+    }
+
+    #middle > h1{
+      display: none;
+      /* flex-direction: column; */
+    }
+    #middle{
+      width: 100%;
+      flex-direction: column;
+    }
+    #reset{display: none;}
   }
