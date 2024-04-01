@@ -4,12 +4,13 @@
     /* background-color: DodgerBlue; */
     margin: 0;
     padding: 0;
+    height: 100vh;
   }
   
   .flex-container > div {
     /* background-color: #f1f1f1; */
     width: 33.33%;
-    height: 100vh;
+    height: 33.33vh;
     display: flex;
     flex-direction: column;
     /* margin: 10px; */
