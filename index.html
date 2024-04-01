@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+    <script src="rps.js"></script>
+    <link rel="stylesheet" href="rps.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>
+            <h1>You</h1>
+            <button onclick="playGame('Rock')">
+                <img src="./images/rock.png" alt="Rock" id="Rock">
+            </button>
+            <button onclick="playGame('Paper')">
+                <img src="./images/paper.png" alt="Paper" id="Paper">
+            </button>
+            <button onclick="playGame('Scissors')">
+                <img src="./images/scissors.png" alt="scissors" id="Scissors">
+            </button>
+        </div>
+        <div>
+            <h1>Score table</h1>
+            <div id="table">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">You</th>
+                            <th scope="col">Computer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" id="score">0</th>
+                            <td id="Cscore">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <br><br>
+                Result
+                <hr>
+                <h1 id="result"></h1>
+                <br>
+                <Button onclick="reset()" class="btn btn-warning">Reset</Button>
+            </div>
+        </div>
+        <div>
+            <h1>Computer</h1>
+            <a rel="noopener noreferrer">
+                <img src="./images/rock.png" alt="Rock" srcset="" id="rockImage" >
+            </a>
+            <a rel="noopener noreferrer">
+                <img src="./images/paper.png" alt="Paper" srcset="" id="paperImage" >
+            </a>
+            <a rel="noopener noreferrer">
+                <img src="./images/scissors.png" alt="scissors" srcset="" id="scissorsImage" >
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- <button id="Rock" onclick="playGame('Rock')">Rock</button>
+    <button id="Paper" onclick="playGame('Paper')">Paper</button>
+    <button id="Scissors" onclick="playGame('Scissors')">Scrissors</button> -->
+    <!-- <div class="flex-container">
+        <div>
+            <a onclick="playGame('Rock')" rel="noopener noreferrer">
+                <img src="./images/rock.png" alt="Rock" srcset="">
+            </a>
+            <a onclick="playGame('Paper')" rel="noopener noreferrer">
+                <img src="./images/paper.png" alt="Paper" srcset="">
+            </a>
+            <a onclick="playGame('Scissors')" rel="noopener noreferrer">
+                <img src="./images/scissors.png" alt="scissors" srcset="">
+            </a>
+        </div>
+    </div> -->
+
+
+
+    <!-- 
+
+    <h2 id="you">You :</h2>
+    <h2 id="comp">Computer :</h2>
+    <h1 id="result"></h1>
+    <hr>
+    <table border>
+        
+        <tr>
+            <td>You</td>
+        <td>Computer</td>
+        </tr>
+        
+        <tr>
+            <td id="score">
+                0
+            </td>
+            <td id="Cscore">
+                0
+            </td>
+        </tr>
+    </table> -->
+</body>
+
+</html>
