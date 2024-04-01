@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 33.33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container > div > button{
+    border: 0;
+  }
+img{
+    width: 200px;
+    
+    padding: 10px;
+    border-radius: 20%;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+  body{
+    margin:0;
+    padding: 0;
+  }
